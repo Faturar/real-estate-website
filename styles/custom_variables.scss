@@ -1,0 +1,27 @@
+$primary:       #69B99D !default;
+$secondary:     #A6A6A6 !default;
+$title: #1F2744 !default;
+
+// Text
+$primary-text:            $primary !default;
+$secondary-text:          $secondary !default;
+
+$link-color:     #A6A6A6 !default;
+
+
+// Button
+$input-btn-padding-y: 12px !default;
+$input-btn-padding-x: 32px !default;
+
+// scss-docs-start form-select-variables
+$form-select-padding-y:             8px !default;
+$form-select-padding-x:             12px !default;
+$form-select-color:                 $title !default;
+
+$form-select-border-width:        0 !default;
+$form-select-border-radius:       0 !default;
+$form-select-box-shadow:         none !default;
+
+$form-select-focus-width:        0 !default;
+$form-select-focus-box-shadow:    none !default;
+// scss-docs-end form-select-variables
