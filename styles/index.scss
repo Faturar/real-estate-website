@@ -63,32 +63,6 @@ body {
 }
 
 // Components
-// .navbar{
-//     background-color: #F5F5F5;
-
-//     .navbar-brand {
-//         color: #00aa6e;
-//     }
-
-//     .navbar-nav .nav-link {
-//         --bs-nav-link-color: #8E8E8E !important;
-//         --bs-nav-link-hover-color: #00aa6e !important;
-//     }
-    
-//     .navbar-nav .nav-link.active {
-//         color: #00aa6e !important;
-//     }
-// }
-
-.btn-noborder {
-    border: none !important;
-}
-
-// .btn-transparent {
-//     --bs-btn-color: #8E8E8E !important;
-//     --bs-btn-hover-color: #24ae7e !important;
-// }
-
 .btn-secondary {
     padding: 12px 32px !important;
 
@@ -109,15 +83,46 @@ body {
     border-radius: 0rem;
 }
 
+.btn-outline-primary {
+    --bs-btn-hover-color: #ffffff !important;
+    --bs-btn-active-color: #ffffff !important;
+}
+
 .text-title {
     color: #1F2744 !important;
+}
+
+.secondary-header {
+    font-size: 18px;
+    color: #69B99D;
+}
+
+.description-text {
+    max-width: 500px;
 }
 
 
 // Element
 .navbar{
-        background-color: #F5F5F5;
+    background-color: #F5F5F5;
+
+    .navbar-brand {
+        color: #00aa6e;
+    }
+
+    .navbar-nav .nav-link {
+        color: #8E8E8E !important;
+
+        &:hover {
+            color: #00aa6e !important;;
+        } 
+    }
+    
+    .navbar-nav .nav-link.active {
+        color: #00aa6e !important;
+    }
 }
+
 header {
     min-height: 720px;
     padding-top: 120px;
@@ -126,20 +131,15 @@ header {
     background-repeat: no-repeat;
     background-position: bottom right;
 
-    .secondary-header-text {
-        font-size: 18px;
-        color: #69B99D;
-    }
-
     .main-header-text {
         width: 600px;
-
+    
         font-family: 'Rubik', sans-serif;
         font-weight: 600;
         font-size: 64px;
     }
+}
 
-    .header-description {
-        width: 500px;
-    }
+#advantage {
+    background-color: #F5F5F5;
 }
