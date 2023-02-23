@@ -1,0 +1,18 @@
+<svg width="104" height="104" viewBox="0 0 104 104" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Iconly/Bold/Tick Square" filter="url(#filter0_d_40_554)">
+<g id="Tick Square">
+<path id="Tick Square_2" fill-rule="evenodd" clip-rule="evenodd" d="M46.2267 38.6665H57.7867C62.3067 38.6665 65.3334 41.8398 65.3334 46.5598V57.4545C65.3334 62.1598 62.3067 65.3332 57.7867 65.3332H46.2267C41.7067 65.3332 38.6667 62.1598 38.6667 57.4545V46.5598C38.6667 41.8398 41.7067 38.6665 46.2267 38.6665ZM51.2401 55.9865L57.5734 49.6532C58.0268 49.1998 58.0268 48.4665 57.5734 47.9998C57.1201 47.5465 56.3734 47.5465 55.9201 47.9998L50.4134 53.5065L48.0801 51.1732C47.6268 50.7198 46.8801 50.7198 46.4268 51.1732C45.9734 51.6265 45.9734 52.3598 46.4268 52.8265L49.6001 55.9865C49.8268 56.2132 50.1201 56.3198 50.4134 56.3198C50.7201 56.3198 51.0134 56.2132 51.2401 55.9865Z" fill="#69B99D"/>
+</g>
+</g>
+<defs>
+<filter id="filter0_d_40_554" x="-2" y="-2" width="108" height="108" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset/>
+<feGaussianBlur stdDeviation="19"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.411765 0 0 0 0 0.72549 0 0 0 0 0.615686 0 0 0 0.32 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_40_554"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_40_554" result="shape"/>
+</filter>
+</defs>
+</svg>
