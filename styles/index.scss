@@ -60,6 +60,8 @@
 
 body {
     font-family: 'Poppins', sans-serif;
+
+    overflow-x: hidden;
 }
 
 // Components
@@ -83,6 +85,10 @@ body {
     border-radius: 0rem;
 }
 
+.btn-search {
+    padding: 16px 48px !important;
+}
+
 .btn-outline-primary {
     --bs-btn-hover-color: #ffffff !important;
     --bs-btn-active-color: #ffffff !important;
@@ -101,14 +107,13 @@ body {
     max-width: 500px;
 }
 
+.navbar-brand {
+    color: #00aa6e;
+}
 
 // Element
 .navbar{
     background-color: #F5F5F5;
-
-    .navbar-brand {
-        color: #00aa6e;
-    }
 
     .navbar-nav .nav-link {
         color: #8E8E8E !important;
@@ -132,14 +137,134 @@ header {
     background-position: bottom right;
 
     .main-header-text {
-        width: 600px;
+        max-width: 600px;
     
         font-family: 'Rubik', sans-serif;
         font-weight: 600;
         font-size: 64px;
     }
+
+    .search-text {
+        font-size: 20px;
+    }
 }
 
 #advantage {
     background-color: #F5F5F5;
+}
+
+#about {
+    margin-top: 240px;
+
+    .rating {
+        width: 176px;
+        color: #054457;
+        top: -80px;
+        left: 120px;
+
+        padding: 32px 0;
+
+        .tick {
+            margin-top: -80px;
+            margin-bottom: -32px;
+        }
+
+        .number-rating {
+            font-size: 72px;
+            margin-bottom: -8px;
+        }
+    }
+
+    .about-img {
+        .about-img-description {
+            color: #054457;
+
+            bottom: 0;
+            right: 0;
+        }
+    }
+
+    .about-header {
+        p {
+            max-width: 510px;
+        }
+    }
+}
+
+#testimonial {
+    margin: 160px 0;
+}
+
+footer {
+    padding: 80px 0;
+    background-color: #F5F5F5;
+}
+
+@media only screen and (max-width: 768px) {
+    .btn-primary {
+        padding: 8px 24px !important;
+    
+        font-weight: 500;
+        color: #ffffff !important;
+        border-radius: 0rem;
+    }
+
+    // Element
+    header {
+        background-size: contain;
+
+        .main-header-text {
+            font-size: 40px;
+        }
+
+        .search-text {
+            font-size: 18px;
+        }
+    }
+
+    #about {
+        margin-top: 160px;
+    
+        .rating {
+            width: 160px;
+            color: #054457;
+            top: -80px;
+            left: 48px;
+    
+            padding: 20px 0px;
+    
+            .tick {
+                margin-top: -64px;
+                margin-bottom: -24px;
+
+                img {
+                    width: 96px;
+                }
+            }
+    
+            .number-rating {
+                font-size: 36px;
+                margin-bottom: -8px;
+            }
+        }
+    
+        .about-img {
+            .about-img-description {
+                color: #054457;
+    
+                bottom: 0;
+                right: 0;
+            }
+        }
+    
+        .about-header {
+            p {
+                max-width: 510px;
+            }
+        }
+    }
+
+    #testimonial {
+        margin: 120px 0;
+    }
 }
