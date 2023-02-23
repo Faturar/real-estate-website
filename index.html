@@ -10,12 +10,15 @@
     <!-- My css -->
     <link rel="stylesheet" href="./styles/index.css">
 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
   </head>
   <body>
+    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg pt-4">
       <div class="container mt-3">
         <a class="navbar-brand mx-3 mx-lg-0" href="#">
@@ -53,27 +56,29 @@
       </div>
     </nav>
 
+    <!-- Header -->
     <header style="background-image: url('./assets/img/main.png');">
       <div class="container">
         <div class="row">
-          <div class="col-8">
+          <!-- Header -->
+          <div class="col-12 col-lg-8 px-4" data-aos="fade-right" data-aos-duration="1200">
             <div class="bg-white d-inline-block px-3 py-2">
-              <h2 class="secondary-header m-0">REAL ESTATE</h2>
+              <h2 class="secondary-header m-0">Real Estate</h2>
             </div>
             <h1 class="main-header-text mt-3 text-title">Let's hunt for your dream residence</h1>
             <p class="description-text text-secondary">Explore our range of beautiful properties with the addition of separate accommodation suitable for you.</p>
           </div>
-          <div class="col-7">
+          <div class="col-12 col-lg-7 px-4 mt-lg-5 pb-5 pb-lg-0" data-aos="fade-up" data-aos-duration="1200">
             <div class="d-flex mt-5">
               <div class="bg-white px-4 py-2 text-primary">
-                <span class="fs-5">Buy</span>
+                <span class="search-text">Buy</span>
               </div>
               <div class="px-4 py-2 text-secondary">
-                <span class="fs-5">Rent</span>
+                <span class="search-text">Rent</span>
               </div>
             </div>
-            <div class="d-flex justify-content-between align-items-center bg-white p-4">
-              <div>
+            <div class="row d-flex justify-content-between align-items-center bg-white p-lg-4 p-3 gap-4 gap-lg-0">
+              <div class="col-12 col-lg-3">
                 <label for="location" class="form-label text-title fw-medium ms-2" for="">Location</label>
                 <select class="form-select" id="location">
                   <option selected>Bogor, Jawa Barat</option>
@@ -81,7 +86,7 @@
                   <option value="3">Manado, Sulawesi Utara</option>
                 </select>
               </div>
-              <div>
+              <div class="col-12 col-lg-3">
                 <label for="type" class="form-label text-title fw-medium ms-2" for="">Type</label>
                 <select class="form-select" id="type">
                   <option selected>Home</option>
@@ -89,7 +94,7 @@
                   <option value="2">Hotel</option>
                 </select>
               </div>
-              <div>
+              <div class="col-12 col-lg-3">
                 <label for="price" class="form-label text-title fw-medium ms-2" for="">Price Range</label>
                 <select class="form-select" id="price">
                   <option selected>$200-$350</option>
@@ -98,8 +103,8 @@
                   <option value="3">$750-$1000</option>
                 </select>
               </div>
-              <div>
-                <button class="btn btn-primary" style="padding: 16px 48px !important;">Search</button>
+              <div class="col-12 col-lg-3">
+                <button class="btn btn-primary btn-search">Search</button>
               </div>
             </div>
           </div>
@@ -107,28 +112,31 @@
       </div>
     </header>
 
+    <!-- Recomendation -->
     <section id="recomendation" class="mt-5">
       <div class="container px-4">
         <div class="row">
+          <!-- Header -->
           <div class="col-12">
             <div class="d-flex justify-content-between align-items-lg-end flex-column flex-lg-row">
-              <div class="py-2">
+              <div class="py-2" data-aos="fade-right" data-aos-duration="1200">
                 <div class="d-flex">
                   <h2 class="secondary-header bg-secondary-subtle m-0 px-4 py-3">Discover</h2>
                 </div>
                 <h1 class="mt-3 text-title fw-bold">Best recomendation</h1>
                 <p class="description-text text-secondary">Discover our exclusive selection of the finest one-of-a-kind luxury properties architectural masterpieces.</p>
               </div>
-              <button class="btn btn-secondary border-0 d-none d-lg-block">
-                <span>Selengkapnya</span>
+              <button class="btn btn-secondary border-0 d-none d-lg-block" data-aos="fade-left" data-aos-duration="1200">
+                <span>Learn More</span>
                 <img src="./assets/icon/arrow-right-circle.svg" alt="">
               </button>
             </div>
           </div>
           
+          <!-- House list -->
           <div class="col-12">
-            <div class="row mt-4">
-              <div class="col-12 col-lg-4 mb-3 mb-lg-0">
+            <div class="row mt-4 gap-4 gap-lg-0">
+              <div class="col-12 col-lg-4" data-aos="fade-up" data-aos-duration="1200">
                 <div class="p-3 d-flex flex-column border">
                   <img src="./assets/img/house1.png" alt="">
                   <h4 class="text-title fw-semibold mt-4">Perum griya asri</h4>
@@ -142,7 +150,7 @@
                   <button class="btn btn-outline-primary mt-4 rounded-0">Send Inquiry</button>
                 </div>
               </div>
-              <div class="col-12 col-lg-4 mb-3 mb-lg-0">
+              <div class="col-12 col-lg-4" data-aos="fade-up" data-aos-duration="1200">
                 <div class="p-3 d-flex flex-column border">
                   <img src="./assets/img/house2.png" alt="">
                   <h4 class="text-title fw-semibold mt-4">Perum kencana asri</h4>
@@ -156,7 +164,7 @@
                   <button class="btn btn-outline-primary mt-4 rounded-0">Send Inquiry</button>
                 </div>
               </div>
-              <div class="col-12 col-lg-4 mb-3 mb-lg-0">
+              <div class="col-12 col-lg-4" data-aos="fade-up" data-aos-duration="1200">
                 <div class="p-3 d-flex flex-column border">
                   <img src="./assets/img/house3.png" alt="">
                   <h4 class="text-title fw-semibold mt-4">Perum rakjel elit</h4>
@@ -176,53 +184,55 @@
       </div>
     </section>
 
+    <!-- Advantage -->
     <section id="advantage" class="mt-5 py-5">
       <div class="container px-4 px-lg-0">
-        <div class="d-flex justify-content-between align-items-end">
-          <div class="py-2">
-            <div class="d-flex">
-              <h2 class="secondary-header bg-secondary-subtle m-0 px-4 py-3">Our Advantage</h2>
-            </div>
-            <h1 class="mt-3 text-title fw-bold">Giving you peace<br> of mind</h1>
+        <!-- Header -->
+        <div class="py-2" data-aos="fade-right" data-aos-duration="1200">
+          <div class="d-flex">
+            <h2 class="secondary-header bg-secondary-subtle m-0 px-4 py-3">Our Advantage</h2>
           </div>
+          <h1 class="mt-3 text-title fw-bold">Giving you peace<br> of mind</h1>
         </div>
-        <div class="row mt-5 px-4">
-          <div class="col-12 col-lg-4 mb-5">
+
+        <!-- Advantage list -->
+        <div class="row mt-5 px-lg-4 gap-5 gap-sm-0">
+          <div class="col-12 col-sm-6 col-lg-4 mb-sm-4" data-aos="fade-up" data-aos-duration="1200">
             <div class="d-flex flex-column">
               <img src="./assets/icon/heart.svg" width="54px" alt="">
               <h4 class="fw-bold mt-4">Comfortable</h4>
               <p class="w-75 mt-3" style="color: #73788C">Enjoy lifestyle amenities designed to provide every homeowners modern comfort, a stone's throw away from schools, churches, and hospitals.</p>
             </div>
           </div>
-          <div class="col-12 col-lg-4 mb-5">
+          <div class="col-12 col-sm-6 col-lg-4 mb-sm-4" data-aos="fade-up" data-aos-duration="1200">
             <div class="d-flex flex-column">
               <img src="./assets/icon/shield-one.svg" width="54px" alt="">
               <h4 class="fw-bold mt-4">Extra security</h4>
               <p class="w-75 mt-3" style="color: #73788C">You can connect with potential tenants without having to share your phone number. We also require all users to register to validate their legitimacy.</p>
             </div>
           </div>
-          <div class="col-12 col-lg-4 mb-5">
+          <div class="col-12 col-sm-6 col-lg-4 mb-sm-4" data-aos="fade-up" data-aos-duration="1200">
             <div class="d-flex flex-column">
               <img src="./assets/icon/star.svg" width="54px" alt="">
               <h4 class="fw-bold mt-4">Luxury</h4>
               <p class="w-75 mt-3" style="color: #73788C">Find out how we provide the highest standard of professional property management to give you all the benefits of property.</p>
             </div>
           </div>
-          <div class="col-12 col-lg-4 mb-5">
+          <div class="col-12 col-sm-6 col-lg-4 mb-sm-4" data-aos="fade-up" data-aos-duration="1200">
             <div class="d-flex flex-column">
               <img src="./assets/icon/ticket-star.svg" width="54px" alt="">
               <h4 class="fw-bold mt-4">Best price</h4>
               <p class="w-75 mt-3" style="color: #73788C">Not sure what you should be charging for your property? Let us do the numbers for you—contact us today for a free rental appraisal on your home.</p>
             </div>
           </div>
-          <div class="col-12 col-lg-4 mb-5">
+          <div class="col-12 col-sm-6 col-lg-4 mb-sm-4" data-aos="fade-up" data-aos-duration="1200">
             <div class="d-flex flex-column">
               <img src="./assets/icon/location.svg" width="54px" alt="">
               <h4 class="fw-bold mt-4">Strategic location</h4>
               <p class="w-75 mt-3" style="color: #73788C">located in the city center close to the shopping center. Very good for areas surrounded by international education centers, start-up office centers.</p>
             </div>
           </div>
-          <div class="col-12 col-lg-4 mb-5">
+          <div class="col-12 col-sm-6 col-lg-4 mb-sm-4" data-aos="fade-up" data-aos-duration="1200">
             <div class="d-flex flex-column">
               <img src="./assets/icon/graph.svg" width="54px" alt="">
               <h4 class="fw-bold mt-4">Efficient</h4>
@@ -233,6 +243,185 @@
       </div>
     </section>
 
+    <!-- About -->
+    <section id="about">
+      <div class="container">
+        <div class="row d-flex align-items-center">
+          <div class="col-12 col-lg-6 position-relative" data-aos="fade-right" data-aos-duration="1200">
+            <!-- Rating -->
+            <div class="rating d-flex flex-column align-items-center bg-white shadow-sm position-absolute z-3" data-aos="fade-up" data-aos-duration="1200">
+              <div class="tick">
+                <img src="./assets/icon/tick.svg" alt="">
+              </div>
+              
+              <span class="number-rating">4.8</span>
+              <div class="mb-3 d-block">
+                <img src="./assets/icon/star-little.svg" alt="">
+                <img src="./assets/icon/star-little.svg" alt="">
+                <img src="./assets/icon/star-little.svg" alt="">
+                <img src="./assets/icon/star-little.svg" alt="">
+                <img src="./assets/icon/star-little.svg" alt="">
+              </div>
+              <span class="text-secondary">Trusted on</span>
+              <span>500+ Reviews</span>
+            </div>
+
+            <div class="about-img position-relative">
+              <img class="img-fluid" src="./assets/img/about.png" alt="">
+
+              <!-- Description -->
+              <div class="about-img-description bg-white py-2 px-5 d-flex position-absolute" data-aos="fade-right" data-aos-duration="1200">
+                <div class="d-flex align-items-center">
+                  <span class="fs-1 fw-bold">250+</span>
+                  <span class="text-secondary ms-3">Property<br>Sale</span>
+                </div>
+                <div class="d-flex align-items-center ms-4">
+                  <span class="fs-1 fw-bold">550+</span>
+                  <span class="text-secondary ms-3">Apartment<br>Rent</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6" data-aos="fade-left" data-aos-duration="1200">
+            <!-- Header -->
+            <div class="about-header mt-5 mt-lg-0 mx-3 ms-lg-4">
+              <div class="py-2">
+                <div class="d-flex">
+                  <h2 class="secondary-header bg-secondary-subtle m-0 px-4 py-3">About Us</h2>
+                </div>
+                <h1 class="mt-3 text-title fw-bold">How much is your<br>property worth now?</h1>
+                <p class="mt-3 text-secondary">We have built our reputation as true local area experts. We have gained more knowledge about buyer interests, our neighborhood and the market than any other brand because we live locally and work for local people.</p>
+                <button class="btn btn-primary mt-5">Learn More</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonial -->
+    <section id="testimonial">
+      <div class="container">
+          <!-- Header -->
+          <div class="d-flex justify-content-between align-items-lg-end flex-column flex-lg-row px-3">
+            <div class="py-2" data-aos="fade-right" data-aos-duration="1200">
+              <div class="d-flex">
+                <h2 class="secondary-header bg-secondary-subtle m-0 px-4 py-3">Customer Testimonial</h2>
+              </div>
+              <h1 class="mt-3 text-title fw-bold">Peopel say about us?</h1>
+            </div>
+            <button class="btn btn-secondary border-0 d-none d-lg-block" data-aos="fade-left" data-aos-duration="1200">
+              <span>Learn More</span>
+              <img src="./assets/icon/arrow-right-circle.svg" alt="">
+            </button>
+          </div>
+
+          <div class="row mt-3 mt-lg-5 px-3 gap-4 gap-lg-0">
+            <div class="col-12 col-lg-4" data-aos="fade-up" data-aos-duration="1200">
+              <div class="d-flex flex-column p-4 border">
+                <img src="./assets/icon/quote.svg" width="42" alt="">
+                <h5 class="mt-4 text-title">It proved to be exactly the kind of home we wanted.</h5>
+                <p class="mt-2 text-title">We wish to express our thanks for your hard work in finding us a temporary home, which proved to be exactly what we wanted.</p>
+                
+                <div class="d-flex mt-3">
+                  <img src="./assets/img/user1.png" height="48" alt="">
+                  <div class="ms-3">
+                    <h6>Jaydon Aminoff</h6>
+                    <p class="m-0">UX Designer</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-4" data-aos="fade-up" data-aos-duration="1200">
+              <div class="d-flex flex-column p-4 border">
+                <img src="./assets/icon/quote.svg" width="42" alt="">
+                <h5 class="mt-4 text-title">Nobody knows Portland and the peninsula better than David.</h5>
+                <p class="mt-2 text-title">My wife and I had a dream of downsizing from our house in Cape Elizabeth into a small condo closer to where we work and play in Portland. </p>
+                
+                <div class="d-flex mt-3">
+                  <img src="./assets/img/user2.png" height="48" alt="">
+                  <div class="ms-3">
+                    <h6>Alfredo Donin</h6>
+                    <p class="m-0">UI Designer</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-4" data-aos="fade-up" data-aos-duration="1200">
+              <div class="d-flex flex-column p-4 border">
+                <img src="./assets/icon/quote.svg" width="42" alt="">
+                <h5 class="mt-4 text-title">He keeps his client’s best interests in sharp focus.</h5>
+                <p class="mt-2 text-title">After working with David to sell my home in 2013, I was convinced that he’s the only realtor I’ll ever need. Since then, I’ve bought two properties and sold one.</p>
+                
+                <div class="d-flex mt-3">
+                  <img src="./assets/img/user3.png" height="48" alt="">
+                  <div class="ms-3">
+                    <h6>Makenna Korsgaard</h6>
+                    <p class="m-0">UX Researcher</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row px-3 gap-5 gap-lg-0">
+          <div class="col-12 col-lg-4 pe-lg-5">
+            <div class="navbar-brand mx-lg-0">
+              <img src="./assets/img/logo.png" alt="Logo" height="40">
+              <span class="ms-2">Mulih</span>
+            </div>
+            <p class="mt-3">We have built our reputation as true local area experts.</p>
+            <h4 class="mt-4 text-title">Newsletter</h4>
+            <div class="mt-lg-4 mt-3 input-group">
+              <input type="text" class="form-control">
+              <button class="btn btn-primary py-1">Send</button>
+            </div>
+          </div>
+          <div class="col-12 col-lg-3 ps-lg-5">
+            <h4 class="text-title fs-5">Service</h4>
+            <div class="d-flex flex-column">
+              <a href="#" class="mt-3 text-decoration-none">About us</a>
+              <a href="#" class="mt-3 text-decoration-none">Careers</a>
+              <a href="#" class="mt-3 text-decoration-none">Terms & Conditions</a>
+              <a href="#" class="mt-3 text-decoration-none">Privacy & Policy</a>
+            </div>
+          </div>
+          <div class="col-12 col-lg-2">
+            <h4 class="text-title fs-5">Community</h4>
+            <div class="d-flex flex-column">
+              <a href="#" class="mt-3 text-decoration-none">Find agents</a>
+              <a href="#" class="mt-3 text-decoration-none">Lifestyle</a>
+              <a href="#" class="mt-3 text-decoration-none">Legal notic</a>
+            </div>
+          </div>
+          <div class="col-12 col-lg-3">
+            <h4 class="text-title fs-5">Follow us on</h4>
+            <div class="d-flex mt-3">
+              <a href="#">
+                <img src="./assets/icon/instagram.svg" alt="">
+              </a>
+              <a href="#" class="ms-3">
+                <img src="./assets/icon/youtube.svg" alt="">
+              </a>
+              <a href="#" class="ms-3">
+                <img src="./assets/icon/facebook.svg" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
